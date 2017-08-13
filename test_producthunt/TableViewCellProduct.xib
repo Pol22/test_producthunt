@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" customClass="TableViewCellProduct" customModule="test_producthunt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="forceLeftToRight" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQM-lh-c8P">
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Upvotes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keR-Zf-6LW">
+                        <frame key="frameInset" minX="243" minY="130" width="69" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="gGU-Kx-loH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="749" translatesAutoresizingMaskIntoConstraints="NO" id="ZOf-Bq-n1M">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGH-4G-vlx">
+                        <frame key="frameInset" minX="8" minY="5" width="112" height="149"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="keR-Zf-6LW" firstAttribute="top" secondItem="ZOf-Bq-n1M" secondAttribute="bottom" constant="8" id="Pee-Oq-e0D"/>
+                    <constraint firstItem="ZOf-Bq-n1M" firstAttribute="leading" secondItem="KGH-4G-vlx" secondAttribute="trailing" constant="8" id="QAF-RM-UGr"/>
+                    <constraint firstItem="ZOf-Bq-n1M" firstAttribute="top" secondItem="oQM-lh-c8P" secondAttribute="bottom" constant="8" id="SJb-Fx-iyE"/>
+                    <constraint firstItem="ZOf-Bq-n1M" firstAttribute="top" secondItem="oQM-lh-c8P" secondAttribute="bottom" constant="8" id="imQ-CU-aZP"/>
+                    <constraint firstItem="ZOf-Bq-n1M" firstAttribute="top" secondItem="oQM-lh-c8P" secondAttribute="bottom" constant="8" id="ja7-Zs-5Bn"/>
+                    <constraint firstItem="ZOf-Bq-n1M" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="zT0-rR-cEf"/>
+                    <constraint firstItem="ZOf-Bq-n1M" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="zV9-k4-dZI"/>
+                </constraints>
+                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="KGH-4G-vlx" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="7" id="1Xq-Pk-wCS"/>
+                <constraint firstItem="KGH-4G-vlx" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="8" id="E4k-Rl-1Zt"/>
+                <constraint firstItem="ZOf-Bq-n1M" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="128" id="Kfs-zF-0wF"/>
+                <constraint firstAttribute="trailing" secondItem="ZOf-Bq-n1M" secondAttribute="trailing" constant="8" id="PM0-lZ-sTN"/>
+                <constraint firstItem="KGH-4G-vlx" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="7" id="RDe-QR-bVd"/>
+                <constraint firstAttribute="trailing" secondItem="oQM-lh-c8P" secondAttribute="trailing" constant="7" id="TQO-Fm-Tbm"/>
+                <constraint firstItem="oQM-lh-c8P" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="8" id="fhz-Kl-mtO"/>
+                <constraint firstItem="oQM-lh-c8P" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="128" id="jZs-8a-aaT"/>
+                <constraint firstItem="keR-Zf-6LW" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="130" id="rIC-yy-NrB"/>
+                <constraint firstItem="ZOf-Bq-n1M" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="40" id="rac-Tm-egz"/>
+                <constraint firstAttribute="trailing" secondItem="keR-Zf-6LW" secondAttribute="trailing" constant="8" id="wId-fu-goK"/>
+                <constraint firstItem="KGH-4G-vlx" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="8" id="xCs-GV-WZ2"/>
+            </constraints>
+            <connections>
+                <outlet property="descript" destination="ZOf-Bq-n1M" id="EdG-1H-60d"/>
+                <outlet property="name" destination="oQM-lh-c8P" id="vB2-v6-dWA"/>
+                <outlet property="thumbnail" destination="KGH-4G-vlx" id="1GP-tK-Z4F"/>
+                <outlet property="upvotes" destination="keR-Zf-6LW" id="Ddo-83-Z1y"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="23"/>
+        </tableViewCell>
+    </objects>
+</document>
